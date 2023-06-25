@@ -124,3 +124,20 @@ img{
     width: 5rem;
     height: 5rem;
 }
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(3),
+    .card:nth-child(4),
+    .card:nth-child(5) {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        margin: 0 2rem;
+    }
+}
